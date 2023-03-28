@@ -14,6 +14,10 @@
   font-family: ItalicSans;
   src: url(../css/fonts/Gill\ Sans\ Italic.otf);
 }
+@font-face {
+  font-family: Condense;
+  src: url(../css/fonts/GillSans\ Condensed.otf);
+}
 .tour-component {
   width: 236px;
   height: 304px;
@@ -41,6 +45,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 30px;
 }
 .tour-component .button-wrapper a {
   text-decoration: none;
@@ -49,15 +54,15 @@
 }
 
 .israel {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(../images/tour1.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(../images/tour-snap/tour-01.jpg);
 }
 
 .america {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(../images/tour2.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(../images/tour-snap/tour-02.jpg);
 }
 
 .aussie {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(../images/tour3.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(../images/tour-snap/tour-03.jpg);
 }
 
 .nz {
@@ -167,7 +172,7 @@ p {
 
 nav {
   margin: 0 auto;
-  width: 100%;
+  max-width: 960px;
   height: 90px;
   display: flex;
   align-items: center;
@@ -470,11 +475,11 @@ nav .last {
 }
 
 .lady {
-  background-image: url(../images/about-client-01.jpg);
+  background-image: url(../images/client1.jpg);
 }
 
 .man {
-  background-image: url(../images/about-client-02.jpg);
+  background-image: url(../images/client2.jpg);
 }
 
 .tours-wrapper {
@@ -487,7 +492,7 @@ nav .last {
   padding-right: 5px;
   height: 200px;
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(../images/tour-header.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(../images/tours-header.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -556,11 +561,12 @@ nav .last {
 
 .info-snapshot-container {
   height: 350px;
-  width: 100%;
+  max-width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 30px;
+  padding-right: 15px;
 }
 .info-snapshot-container .snapshot {
   height: 100%;
@@ -568,13 +574,14 @@ nav .last {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: maroon;
+  margin-left: 20px;
 }
 
 .info-text-container {
   width: 100%;
   height: 776px;
   margin-bottom: 70px;
+  padding: 15px;
 }
 .info-text-container h1 {
   font-family: Nova;
@@ -590,7 +597,7 @@ nav .last {
 }
 
 .israel {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(../images/tour1.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(../images/tour-snap/tour-01.jpg);
 }
 
 .israel-1 {
@@ -606,7 +613,7 @@ nav .last {
 }
 
 .usa {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(../images/tour2.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(../images/tour-snap/tour-02.jpg);
 }
 
 .usa-1 {
@@ -622,7 +629,7 @@ nav .last {
 }
 
 .aus {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(../images/tour3.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(../images/tour-snap/tour-03.jpg);
 }
 
 .aus-1 {
@@ -731,6 +738,234 @@ nav .last {
 
 .uae-3 {
   background-image: url(../images/uae/uae-tour-03.jpg);
+}
+
+@media (width: 950px) {
+  .info-snapshot-container {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.offer-wrapper {
+  min-height: 700px;
+  max-width: 980px;
+  margin: 90px auto;
+}
+.offer-wrapper .offer-container {
+  margin-left: 20px;
+  max-width: 800px;
+  min-height: 429px;
+}
+.offer-wrapper .offer-container .deal-container {
+  width: 100%;
+  height: 287px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 37px;
+}
+.offer-wrapper .offer-container .deal-container .picture {
+  height: 100%;
+  width: 200px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.offer-wrapper .offer-container .deal-container .quote {
+  margin-left: 30px;
+  height: 100%;
+  max-width: 280px;
+  position: relative;
+}
+.offer-wrapper .offer-container .deal-container .quote p {
+  font-family: ItalicSans;
+  font-size: 18px;
+  line-height: 19px;
+}
+.offer-wrapper .offer-container .deal-container .quote .button-wrapper {
+  width: 133px;
+  height: 40px;
+  margin-top: 20px;
+  background-color: #79addc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+}
+.offer-wrapper .offer-container .deal-container .quote .button-wrapper a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: RegularSans;
+}
+.offer-wrapper .offer-container h1 {
+  font-family: LightSans;
+  font-size: 30px;
+  width: 300px;
+  height: 50px;
+  border-bottom: 2px solid black;
+  margin-bottom: 32px;
+}
+
+.spain {
+  background-image: url(../images/special-offer-01.jpg);
+}
+
+.thai {
+  background-image: url(../images/special-offer-02.jpg);
+}
+
+.blog {
+  max-width: 980px;
+  min-height: 100px;
+  margin: 0 auto;
+}
+.blog h1 {
+  font-family: LightSans;
+  font-size: 30px;
+  width: 100px;
+  height: 50px;
+  border-bottom: 2px solid black;
+  margin-bottom: 32px;
+  margin-top: 50px;
+}
+.blog .post {
+  width: 100%;
+  min-height: 50px;
+  display: flex;
+  margin-bottom: 100px;
+}
+.blog .post .left {
+  width: 60px;
+  margin-right: 20px;
+}
+.blog .post .left .date-box {
+  width: 60px;
+  height: 60px;
+  background-color: #79addc;
+  text-align: center;
+}
+.blog .post .left .date-box p {
+  color: #ffffff;
+  font-family: RegularSans;
+}
+.blog .post .right {
+  width: 900px;
+}
+.blog .post .right .blog-hero {
+  width: 100%;
+  height: 259px;
+  margin-bottom: 20px;
+  background-image: url(../images/blog.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.blog .post .right .text {
+  width: 380px;
+}
+.blog .post .right .text p {
+  font-family: RegularSans;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.body {
+  color: #79addc;
+}
+
+.day {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+@media (max-width: 1000px) {
+  .blog {
+    max-width: 830px;
+  }
+  .blog .post .right {
+    width: 750px;
+  }
+}
+.contact {
+  max-width: 980px;
+  min-height: 650px;
+  margin: 0 auto;
+}
+.contact h1 {
+  font-family: LightSans;
+  font-size: 30px;
+  width: 200px;
+  height: 50px;
+  border-bottom: 2px solid black;
+  margin-bottom: 32px;
+  margin-top: 50px;
+}
+.contact .contact-holder {
+  max-width: 980px;
+  height: 500px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact .contact-holder .left .map {
+  margin-top: 100px;
+  height: 100%;
+  width: 400px;
+  margin-bottom: 30px;
+}
+.contact .contact-holder .left .address {
+  height: 161px;
+  width: 400px;
+}
+.contact .contact-holder .left .address p {
+  font-family: LightSans;
+}
+.contact .contact-holder .right {
+  width: 539px;
+  margin-left: 20px;
+}
+.contact .contact-holder .right .input-holder {
+  height: 100%;
+  width: 100%;
+}
+.contact .contact-holder .right .input-holder input {
+  width: 100%;
+  height: 50px;
+  padding-left: 20px;
+  display: block;
+  margin-bottom: 20px;
+}
+.contact .contact-holder .right .input-holder input:focus {
+  outline: none;
+}
+.contact .contact-holder .right .input-holder textarea {
+  width: 100%;
+  height: 230px;
+  padding-top: 20px;
+  padding-left: 20px;
+  resize: none;
+}
+.contact .contact-holder .right .input-holder textarea:focus {
+  outline: none;
+}
+.contact .contact-holder .right .button-wrapper {
+  width: 133px;
+  height: 40px;
+  margin-top: 20px;
+  background-color: #79addc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact .contact-holder .right .button-wrapper a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: RegularSans;
 }
 
 footer {
